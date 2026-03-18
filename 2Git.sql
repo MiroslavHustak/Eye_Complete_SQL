@@ -26,7 +26,7 @@ IF EXISTS (
     WHERE [name] = 'TabA'
 )
 
-INSERT INTO TabA (Jmeno, Prijmeni, RC, DatumNarozeni) -- V tomto případě by nemělo být riziko SQL injection (TODO řešit pouze v ADO .NET, pokud se k tomu dostanu)
+INSERT INTO TabA (Jmeno, Prijmeni, RC, DatumNarozeni) -- V tomto případě by nemělo být riziko SQL injection (TODO řešit pouze v ADO.NET, pokud se k tomu dostanu)
 VALUES
 ('Floor', 'Jansen', '8102216847', '1981-02-21'),  
 ('Tuomas','Holopainen','7612253089', '1976-12-25'), 

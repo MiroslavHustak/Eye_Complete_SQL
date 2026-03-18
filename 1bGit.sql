@@ -1,7 +1,6 @@
 /*
 1.b. K tabulce TabA vytvořte unikátní klíč na sloupec RC
 */
--- Tady asi také není co moc popisovat.
 -- Níže uvedený kód by zcela postačoval pro splnění zadání, .....
 /*
 USE Natalie

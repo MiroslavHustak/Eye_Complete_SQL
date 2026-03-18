@@ -10,7 +10,7 @@ IF EXISTS (
     WHERE [name] = 'TabB'
 )
 
-INSERT INTO TabB (IDA, Poradi, Datum, Vaha) -- V tomto případě by nemělo být riziko SQL injection (TODO řešit pouze v ADO .NET, pokud se k tomu dostanu)
+INSERT INTO TabB (IDA, Poradi, Datum, Vaha) -- V tomto případě by nemělo být riziko SQL injection (TODO řešit pouze v ADO.NET, pokud se k tomu dostanu)
 VALUES
 (1,1,'2024-01-01',82),
 (1,2,'2024-02-01',83),

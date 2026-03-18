@@ -21,7 +21,7 @@ CREATE TABLE dbo.TabB
     Poradi INT UNIQUE,                  
     Datum DATE,                        
     Vaha DECIMAL(5,2),  -- (5, 2) - Maník/mánička nebude hmotnit více, jak 999,99 kg, neb (5, 2) to zajistí   
-    CHECK (Vaha >= 0.0 AND Vaha <= 999.99), -- Přidal jsem alespoň jeden CHECK constraint, když už to dělám 
+    CHECK (Vaha >= 0.0), -- Přidal jsem alespoň jeden CHECK constraint, když už to dělám 
     CONSTRAINT FK_TabB_TabA
         FOREIGN KEY (IDA) REFERENCES dbo.TabA(ID)   -- 1:N relationship
 );
