@@ -1,5 +1,3 @@
--- 4.a Vypište seznam jmen a příjmení z tabulky TabA setříděné podle příjmení od A do Z.
-
 USE Natalie;
 GO
 
