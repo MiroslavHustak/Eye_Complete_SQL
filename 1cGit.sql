@@ -1,14 +1,4 @@
-/*
-1.c Tabulka TabB se strukturou ID - jednoznačný identifikátor, klíč
- , IDA - Identifikátor vazby na TabA.ID (1:N)
- , Poradi - integer - unikátní klíč
- , Datum - datum
- , Vaha - desetinné číslo
- Tabulka TabA je seznam lidí, do tabulky TabB se zaznamenávají váhy jednotlivých lidí v čase
- V zadání nebudeme řešit, že některé sloupce nesmí být prázdné. 
-*/
-
-USE Natalie; -- Tady musí být (different DB context)
+USE Natalie; 
 GO
 
 DROP TABLE IF EXISTS dbo.TabB; 
@@ -21,7 +11,7 @@ CREATE TABLE dbo.TabB
     Poradi INT UNIQUE,                  
     Datum DATE,                        
     Vaha DECIMAL(5,2),  -- (5, 2) - Maník/mánička nebude hmotnit více, jak 999,99 kg, neb (5, 2) to zajistí   
-    CHECK (Vaha >= 0.0), -- Přidal jsem alespoň jeden CHECK constraint, když už to dělám 
+    CHECK (Vaha >= 0.0),
     CONSTRAINT FK_TabB_TabA
         FOREIGN KEY (IDA) REFERENCES dbo.TabA(ID)   -- 1:N relationship
 );
