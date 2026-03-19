@@ -1,5 +1,3 @@
--- 4.b Vypište seznam jmen a příjmení z tabulky TabA setříděné podle DatumNarozeni - od nejmladších po nejstarší.
-
 USE Natalie;
 GO
 
