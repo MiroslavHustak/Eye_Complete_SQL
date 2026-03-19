@@ -1,5 +1,3 @@
--- 4.d Vypište seznam jmen a příjmení z tabulky TabA a ke každému jménu průměrnou váhu z tabulky TabB.
-
 USE Natalie;
 GO
 
