@@ -1,6 +1,3 @@
--- 4.c Vypište seznam jmen a příjmení z tabulky TabA a Datum a Váhu z tabulky TabB,
--- u nichž se v čase vyskytlo vážení, kde váha byla větší než (například 72 kg).
-
 USE Natalie;
 GO
 
