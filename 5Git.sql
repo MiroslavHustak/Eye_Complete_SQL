@@ -8,10 +8,10 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 CREATE PROC GetTabA
-    @Count INT OUTPUT -- typová deklarace output parametru
+    @Count INT OUTPUT 
 AS
 BEGIN 
     SELECT * FROM TabA; -- dostaneme result set, ze kterého níže pomocí COUNT vyselektujeme počet záznamů
-    SELECT @Count = COUNT(*) FROM TabA; -- do output parametru dosadíme počet záznamů (tj. počet lidí)
-END; -- Konec procedury END
+    SELECT @Count = COUNT(*) FROM TabA;
+END; 
 GO
